@@ -34,6 +34,7 @@ let routers = createBrowserRouter([
     {path:"people" , element: <ProtectedData><People/></ProtectedData>},
     {path:"itemsDetails/:id/:type" , element: <ProtectedData><ItemDetails/></ProtectedData>},
     {path:"login" , element: <Login saveData={saveData}/>},
+    {path:"treanding/" , element: <Register/>},
     {index:true , element: <Register/>},
     {path:"*" , element: <Notfound/>},
   ]}
